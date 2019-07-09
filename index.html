@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <title>Crystal Collector!</title>
+</head>
+
+<style>
+
+img {
+    height: 100px; 
+    width: 100px;
+}
+
+</style>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+
+            <h1 class="text-center">Crystal Collector!</h1>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h3>You will be given a random number at the start of the game</h3>
+                    <br>
+                    <h3>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your total score.</h3>
+                    <br>
+                    <h3>You win the game by matching your total score to a random number, you lose the game if your
+                        total score goes above the random number.</h3>
+                    <br>
+                    <h3>The value of each crystal is hidden from you until you click on it.</h3>
+                    <br>
+                    <h3>Each time when the game starts the game will change the values of each crystal.</h3>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" id="game">
+
+        <div class="col-lg-6">
+            <h3 class="text-center">Match this number using the crystals below!</h3>
+            <h1 class="text-center" id="randomNumber">0</h1>
+        </div>
+
+        <div class="row">
+
+                <div class="col-lg-6">
+                    <h3 class="text-center">Your Total Score:</h3>
+                    <h1 class="text-center" id="score">0</h1>
+                </div>
+            </div>
+
+        <div class="col-lg-6">
+            <h3 class="text-center">Wins:</h3>
+            <h1 class="text-center" id="wins">0</h1>
+            <h3 class="text-center">Losses:</h3>
+            <h1 class="text-center" id="losses">0</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6 text-center">
+
+                <button id="gachaOne"><img src="assets/images/Gacha (1).png"></button>
+
+                <button id="gachaTwo"><img src="assets/images/Gacha (2).png"></button>
+
+                <button id="gachaThree"><img src="assets/images/Gacha (3).png"></button>
+
+                <button id="gachaFour"><img src="assets/images/Gacha (4).png"></button>
+
+            </div>
+
+         
+
+
+
+        </div>
+
+
+
+
+</body>
+
+</html>
